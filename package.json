@@ -1,0 +1,19 @@
+{
+  "name": "req-test",
+  "version": "1.0.0",
+  "description": "发起请求，去redis查询是否存在key \t如果存在在redis存在key，返回对应数据 \t否则查询key是否已在等待列表 \t\t如果在，阻塞，　阻塞后面是取redis \t\t如果不在，请求接口，同时把key存在等待列表，请求返回后，把key从等待列表中删除，同时将已阻塞的请求变成非阻塞",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bonjs/req-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bonjs/req-test/issues"
+  },
+  "homepage": "https://github.com/bonjs/req-test#readme"
+}
